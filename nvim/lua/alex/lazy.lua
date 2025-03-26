@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     { import = 'alex.plugins' },
+    { import = 'alex.plugins.lsp' },
   },
   {
     checker = {
