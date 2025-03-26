@@ -6,8 +6,8 @@ keymap.set("n", "gx", ":!open <c-r><c-a><CR>") -- open URL under cursor
 
 -- Get Help
 keymap.set("n", "<leader>h", ":vertical help ", { desc = "Get Help on..." })
-keymap.set("n", "<leadeo", ":vert options<CR>", { desc = "Open Options in a vertical split" })
-keymap.set("n", "<leader>mas", ":Man ascii<CR>", { desc = "Get ASCII Man Page" })
+keymap.set("n", "<leader>o", ":vert options<CR>", { desc = "Open Options in a vertical split" })
+keymap.set("n", "<leader>ascii", ":Man ascii<CR>", { desc = "Get ASCII Man Page" })
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
@@ -37,16 +37,11 @@ keymap.set("n", "<leader>d[", "[c", { desc = "DIFF : previous diff hunk" })
 -- Save & Close
 keymap.set("n", "<leader>wa", ":wqa<cr>", { desc = "save and close all" })
 keymap.set("n", "<leader>wq", ":wq<cr>", { desc = "save and close all" })
-keymap.set("i", "jk", "<Esc>", { desc = "esc and save" })
+--keymap.set("i", "jk", "<Esc>", { desc = "esc and save" })
 keymap.set("n", "<leader>w", ":wall<CR>", { desc = "save all" })
 keymap.set("n", "qq", "@a", { desc = "close all" })
 keymap.set("n", "qf", ":q!<cr>", { desc = "close current bufferall without saving" })
-keymap.set(
-  "n",
-  "<leader>tf",
-  ":!touch %<cr>",
-  { silent = true, noremap = true, desc = "touch file to reload observers" }
-)
+keymap.set("n", "<leader>tf", ":!touch %<cr>", { silent = true, noremap = true, desc = "touch file to reload observers" })
 keymap.set("n", "<leader>_", "5<c-w>-", { remap = true, silent = false })
 keymap.set("n", "<leader>+", "5<c-w>+", { remap = true, silent = false })
 keymap.set("n", "<C-q>", ":bp<bar>sp<bar>bn<bar>bd<CR><CR>", { desc = "Close active buffer" })
