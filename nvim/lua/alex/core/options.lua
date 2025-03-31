@@ -2,7 +2,7 @@ local opt = vim.opt
 
 -- Options--
 -- set font
-opt.guifont = "Fira Code Nerd Font:h11"
+opt.guifont = "FiraCode Nerd Font:h11"
 vim.diagnostic.config {
   float = { border = "rounded" }, -- add border to diagnostic popups
 }
