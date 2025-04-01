@@ -67,8 +67,6 @@ keymap.set("v", "<S-PageUp>", ":m '<-2<CR>gv=gv", { desc = "Move Line Up in Visu
 -- Navigate Search Results
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
--- Disable/Enable Neocolumn
-keymap.set("n", "<leader>nc", "<cmd>ToggleNeoColumn<cr>")
 -- Disable/Enable LSP
 keymap.set("n", "<leader>ld", ":LspStop<CR>", { desc = "Disable LSP" })
 keymap.set("n", "<leader>le", ":LspStart<CR>", { desc = "Enable LSP" })
