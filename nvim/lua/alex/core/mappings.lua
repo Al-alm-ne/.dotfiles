@@ -67,8 +67,8 @@ keymap.set("v", "<S-PageUp>", ":m '<-2<CR>gv=gv", { desc = "Move Line Up in Visu
 -- Navigate Search Results
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
-
--- LSP
+-- Disable/Enable Neocolumn
+keymap.set("n", "<leader>nc", "<cmd>ToggleNeoColumn<cr>")
 -- Disable/Enable LSP
 keymap.set("n", "<leader>ld", ":LspStop<CR>", { desc = "Disable LSP" })
 keymap.set("n", "<leader>le", ":LspStart<CR>", { desc = "Enable LSP" })
@@ -82,6 +82,9 @@ keymap.set("t", "<C-l>", "<C-\\><C-n><C-l>", { noremap = true, silent = true })
 keymap.set("t", "<A-m>", "<C-\\><C-n><A-m>", { noremap = true, silent = true })
 keymap.set("n", "<leader>Tsv", ":vsp term://", { desc = "Open terminal", noremap = true, silent = false })
 keymap.set("n", "<leader>Tsh", ":sp term://", { desc = "Open terminal", noremap = true, silent = false })
+-- Fterm Terminal
+keymap.set('n', '<leader>tt', '<CMD>lua require("FTerm").toggle()<CR>')
+keymap.set('t', '<leader>tt', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 -- Exec Command lines
 keymap.set("n", "<leader>ex", ":.w !bash -e<CR>", { desc = "Execute current line and output to command line" })
 keymap.set("n", "<leader>eX", ":%w !bash -e<CR>", { desc = "Execute all lines and output to command line" })

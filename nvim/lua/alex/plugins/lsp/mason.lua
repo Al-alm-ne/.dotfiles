@@ -71,7 +71,7 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        -- "clangd",
+        "clangd",
         -- "lua_ls",
         -- "nil", -- nix
         -- "jsonls",                    -- json

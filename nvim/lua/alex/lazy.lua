@@ -18,6 +18,7 @@ require("lazy").setup({
     { import = 'alex.plugins' },
     { import = 'alex.plugins.lsp' },
     { import = 'alex.plugins.ui' },
+    { import = 'alex.plugins.nav' },
   },
   {
     checker = {

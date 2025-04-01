@@ -73,6 +73,7 @@ return {
         NvimTreeNormal = { bg = "NONE", ctermbg = "NONE" },
         NvimTreeRootFolder = { bg = "NONE", ctermbg = "NONE", fg = "#69FF94" },
         CursorLineNr = { fg = "#e8eb34" },
+				CursorLine = { bg = "#191A21" },
         NvimTreeLineNr = { fg = "#34eb43" },
         LineNr = { fg = "#D6ACFF" },
         LspFloatWinBorder = { fg = "#e8eb34" },
