@@ -35,17 +35,19 @@ keymap.set("n", "<leader>d[", "[c", { desc = "DIFF : previous diff hunk" })
 
 -- Buffers
 -- Save & Close
-keymap.set("n", "<leader>wa", ":wqa<cr>", { desc = "save and close all" })
-keymap.set("n", "<leader>wq", ":wq<cr>", { desc = "save and close all" })
---keymap.set("i", "jk", "<Esc>", { desc = "esc and save" })
-keymap.set("n", "<leader>w", ":wall<CR>", { desc = "save all" })
-keymap.set("n", "qq", "@a", { desc = "close all" })
-keymap.set("n", "qf", ":q!<cr>", { desc = "close current bufferall without saving" })
+keymap.set("n", "<leader>q", ":q<cr>", { desc = "close" })
+keymap.set("n", "<leader>ZQ", ":q!<cr>", { desc = "close without saving" })
+keymap.set("n", "<leader>q!", ":q!<cr>", { desc = "close without saving" })
+keymap.set("n", "<leader>w", ":w<cr>", { desc = "Save" })
+keymap.set("n", "<leader>wq", ":wq<cr>", { desc = "save and close" })
+keymap.set("n", "<leader>ZZ", ":wq<cr>", { desc = "Save and close" })
+keymap.set("n", "<leader>x", ":x<cr>", { desc = "Save and close" })
+-- :w ARQUIVO { desc = "Save as"}
 keymap.set("n", "<leader>tf", ":!touch %<cr>", { silent = true, noremap = true, desc = "touch file to reload observers" })
 keymap.set("n", "<leader>_", "5<c-w>-", { remap = true, silent = false })
 keymap.set("n", "<leader>+", "5<c-w>+", { remap = true, silent = false })
-keymap.set("n", "<C-q>", ":bp<bar>sp<bar>bn<bar>bd<CR><CR>", { desc = "Close active buffer" })
-keymap.set("n", "<leader>xs", ":clo<CR>", { desc = "Close split" })
+keymap.set("n", "<C-q>", ":bp<bar>sp<bar>bn<bar>bd<CR><CR>", { desc = "Close active buffer(mantem a janela)" })
+keymap.set("n", "<leader>xs", ":clo<CR>", { desc = "Close split(fecha a janela)" })
 keymap.set("n", "<tab>", ":bnext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 
