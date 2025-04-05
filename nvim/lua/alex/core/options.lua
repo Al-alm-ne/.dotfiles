@@ -97,6 +97,7 @@ vim.opt.completeopt = 'menuone,noselect'
 vim.g.bulitin_lsp = true
 
 -- Other
+opt.scrolloff=8
 opt.showcmd = true
 opt.showmode = true
 opt.laststatus = 3
