@@ -49,7 +49,7 @@ opt.formatoptions:remove("o")
 opt.clipboard = "unnamedplus"
 
 -- Scroll
--- opt.scrolloff = 7
+opt.scrolloff = 7
 -- opt.sidescrolloff = 88
 -- opt.sidescrolloff = 999
 
@@ -97,7 +97,6 @@ vim.opt.completeopt = 'menuone,noselect'
 vim.g.bulitin_lsp = true
 
 -- Other
-opt.scrolloff=8
 opt.showcmd = true
 opt.showmode = true
 opt.laststatus = 3
