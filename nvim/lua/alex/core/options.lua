@@ -16,7 +16,7 @@ opt.ruler = true
 opt.linebreak = false
 
 -- Tab
-local tab_width = 2
+local tab_width = 4
 opt.tabstop = tab_width
 opt.softtabstop = tab_width
 opt.shiftwidth = tab_width
